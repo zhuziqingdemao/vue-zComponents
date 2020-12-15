@@ -70,12 +70,3 @@ export default {
   },
 };
 </script>
-
-<style lang="css" scoped>
-.test {
-  width: 200px;
-  height: 200px;
-  background: red;
-  color: #fff;
-}
-</style>

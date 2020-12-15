@@ -26,20 +26,20 @@ export default {
     if (this.$slots.drag) {
       this.setSlotAttr();
     }
-    this.dispatch('DragWrap', 'putChild', this.$el);
+    this.dispatch('ZDragWrap', 'putChild', this.$el);
   },
   methods: {
     onDragstart() {
       this.$el.style.opacity = '0.3';
-      this.dispatch('DragWrap', 'dragstart', this.$el);
+      this.dispatch('ZDragWrap', 'dragstart', this.$el);
     },
     onDragenter() {
       console.log('dragenter')
-      this.dispatch('DragWrap', 'dragenter', this.$el);
+      this.dispatch('ZDragWrap', 'dragenter', this.$el);
     },
     onDragend() {
       this.$el.style.opacity = '1';
-      this.dispatch('DragWrap', 'dragend');
+      this.dispatch('ZDragWrap', 'dragend');
     },
     setSlotAttr() {
       const slotVNode = this.$slots.default.find((vnode) => !vnode.data && vnode.text !== '');
@@ -58,7 +58,7 @@ export default {
   },
 };
 </script>
-<style lang="css" scoped>
+<style lang="css">
 .__drag_item {
   display:inline-block;
   width: 200px;

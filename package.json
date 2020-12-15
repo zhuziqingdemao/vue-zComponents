@@ -1,9 +1,10 @@
 {
   "name": "vue-zcomponents",
-  "version": "0.6.0",
+  "version": "0.7.0",
   "private": false,
   "main": "lib/vue-zcomponents.umd.js",
   "module": "lin/vue-zcomponents.umd.js",
+  "description": "使用vue cli3来搭建一下比较有趣的组件开发",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
